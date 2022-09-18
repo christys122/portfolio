@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Nav() {
-
+const [categories] = useState([
+    {
+        name: 'Projects',
+        description: 'Samples of Projects ~made by cs',
+    },
+    { name: 'Contact', description: 'form to email a message to cs'},
+    { name: 'Resume', description: 'skills and resume ~cs'},
+]);
+    const [currentCategory, setCurrentCategory] = useState(categories[0]);
+        
     return (
-    <header>
+    <header className="flex-row px-1">
         <h2>
             <a href="/">
-                <span role="img" aria-label="icon"> 📸</span> Welcome
+                <span role="img" aria-label="icon"> 📸</span> Welcome to my Page! 
             </a>
         </h2>
         <nav>
