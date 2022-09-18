@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
 
-function Nav() {
-const [categories] = useState([
-    {
-        name: 'Projects',
-        description: 'Samples of Projects ~made by cs',
-    },
-    { name: 'Contact', description: 'form to email a message to cs'},
-    { name: 'Resume', description: 'skills and resume ~cs'},
-]);
-    const [currentCategory, setCurrentCategory] = useState(categories[0]);
-        
+function Nav(props) {
+    const {
+        categories = [],
+        setCurrentCategory,
+        currentCategory,
+        contactSelected,
+        setContactSelected
+      } = props;
+
+  
     return (
     <header className="flex-row px-1">
         <h2>
@@ -18,21 +17,22 @@ const [categories] = useState([
                 <span role="img" aria-label="icon"> 📸</span> Welcome to my Page! 
             </a>
         </h2>
-        <nav>
+        <nav> 
             <ul className="flex-row">
                 <li className="mx-2">
-                    <a href="#about">
-                        About Me
+                    <a href="#about" onClick={() => setContactSelected(false)}>
+                         About Me
                     </a>
                 </li>
-                <li>
-                    <span>Contact Me</span>
+                <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+                <span onClick={() => setContactSelected(true)}>Contact Me </span>
+                       
+                </li>
+                <li className={`mx-2 ${!contactSelected && 'navActive'}`}>
+                    <span onClick={() => setContactSelected(false)}> My Projects </span>
                 </li>
                 <li>
-                    <span>My Projects</span>
-                </li>
-                <li>
-                    <span>Resume</span>
+                    <span onClick={() => setContactSelected(false)}> Resume </span>
                 </li>
             </ul>
         </nav>
