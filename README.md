@@ -28,7 +28,7 @@ Professional Portfolio using React to highlight projects, contact information, a
     This project is licensed under the MIT license.
 
 ## Screenshot
-![Portfolio]
+![image](https://user-images.githubusercontent.com/102922008/190950569-08499e95-52b5-4f49-ac26-d1662dbcdf48.png)![Portfolio]
 
 ## Contributing
 
