@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 
 function Nav(props) {
     const {
-        categories = [],
-        setCurrentCategory,
-        currentCategory,
+        
         contactSelected,
         setContactSelected
       } = props;
@@ -14,7 +12,7 @@ function Nav(props) {
     <header className="flex-row px-1">
         <h2>
             <a href="/">
-                <span role="img" aria-label="icon"> 📸</span> Welcome to my Page! 
+                <span role="img" aria-label="icon">  </span> Welcome to my Page! 
             </a>
         </h2>
         <nav> 

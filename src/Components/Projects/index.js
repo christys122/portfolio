@@ -52,32 +52,4 @@ function Projects() {
 
 
 
-
-
-
-
-
-
-// function Projects(props) {
-//     const currentProject = {
-//         name: "Pet Portal",
-//         description: "A functional application designed for pet care providers to log in and track various actions utilizing and SQL database.  This dual function app also allows pet owners to view log in and view appointment, pet information, and communicate with pet care staff.",
-//     };
-//         // { name: "Event Radar", description: "An interactive application that returns the event and weather information base on user request",
-//         // },
-        
-
-
-//     return (
-//         <section>
-//             <h1>{currentProject.name}</h1>
-//             <p>{currentProject.description}</p>
-//             <div className="flex-row">
-//                 <img src={photo} alt="project example" className="img-thumbnail mx-1"/>
-//             </div>
-//         </section>
-//     );
-// }
-
-
 export default Projects;
