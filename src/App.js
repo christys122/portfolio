@@ -8,6 +8,7 @@ import Projects from './Components/Projects';
 import ContactForm from './Components/Contact';
 import Resume from './Components/Resume';
 import Home from './Components/Home';
+import Footer from './Components/Footer';
 
 
 function App() {
@@ -35,14 +36,17 @@ function App() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
-      
+    <><div>
+      <nav>
+
         <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {renderPage()}
+        {renderPage()}
+      </nav>
+    </div>
+    <div>
+      <Footer />
       </div>
-
-
-
+      </>
   );
 }
 
@@ -50,32 +54,5 @@ function App() {
 
 
 
-      {/* <Nav
-      
-      contactSelected={contactSelected}
-      setContactSelected={setContactSelected}
-      ></Nav>
-      <main>   
-        {!contactSelected ? (
-          <>
-          <About></About>
-               
-          </>
-        ) : (
-          <ContactForm></ContactForm>
-        )}
-
-        {!contactSelected && !AboutSelected ? (
-         <>
-          <Projects></Projects>
-          </>
-        ) : (
-        <About></About>
-        )}
-
-    </main>
-    </div>
-  );
-} */}
 
 export default App;
