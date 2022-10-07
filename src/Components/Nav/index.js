@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function Nav(props) {
     const {
@@ -9,14 +9,8 @@ function Nav(props) {
 
   
     return (
-    <header className="flex-row px-1">
-        <h2>
-            <a href="/">
-                <span role="img" aria-label="icon">  </span> Welcome to my Page! 
-            </a>
-        </h2>
         <nav> 
-            <ul className="flex-row">
+            <ul className="flex-row ">
                 <li className="mx-2">
                     <a href="#about" onClick={() => setContactSelected(false)}>
                          About Me
@@ -34,7 +28,7 @@ function Nav(props) {
                 </li>
             </ul>
         </nav>
-    </header>
+    
     );
 
 }

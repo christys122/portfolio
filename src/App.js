@@ -11,6 +11,9 @@ import Home from './Components/Home';
 import Footer from './Components/Footer';
 
 
+
+
+
 function App() {
   const [currentPage, setCurrentPage] = useState('Home');
   const [contactSelected, setContactSelected] = useState(false);
@@ -38,10 +41,14 @@ function App() {
   return (
     <><div>
       <nav>
-
+    
         <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
         {renderPage()}
+        
       </nav>
+    </div>
+    <div>
+    
     </div>
     <div>
       <Footer />

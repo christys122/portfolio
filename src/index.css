@@ -1,14 +1,19 @@
 
 main {
-	margin: auto;
+	margin: 5px auto;
 	max-width: 90%;
   padding: 50px 30px;
 }
 :root {
+<<<<<<< HEAD
     --whitesmoke: rgb(245, 245, 245);
     --eggplant: rgb(49, 3, 49);
   --primary: #8c54ff;
   --secondary: #F3A847;
+=======
+  --primary: #6c47b5;
+  --secondary: #d1841f;
+>>>>>>> develop
   --tertiary: #B12704;
   --light: #fafafa;
   --dark: #000000;
@@ -30,13 +35,31 @@ body {
 }
 
 body {
+<<<<<<< HEAD
   margin: 10;
   padding: 10;
   font-weight: 200;
+=======
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background: hsla(10, 82%, 65%, 1);
+
+  background: linear-gradient(90deg, hsla(10, 82%, 65%, 1) 0%, rgb(73, 10, 85) 100%);
+  
+  background: -moz-linear-gradient(90deg, hsla(10, 82%, 65%, 1) 0%, rgb(74, 10, 85) 100%);
+  
+  background: -webkit-linear-gradient(90deg, hsla(10, 82%, 65%, 1) 0%, rgb(83, 11, 96) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EF745C", endColorstr="#34073D", GradientType=1 );
+  
+  margin: 10;
+  padding: 0;
+  
+  font-weight: 600;
+>>>>>>> develop
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: var(--dark);
+  
   color: var(--light);
   
   font-family:Georgia, 'Times New Roman', Times, serif;
@@ -58,8 +81,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
 }
@@ -103,10 +126,21 @@ a:hover {
   text-decoration: underline;
 }
 
+<<<<<<< HEAD
 
+=======
+header {
+  color:rgb(73, 10, 85)
+}
+>>>>>>> develop
 
 header a {
   color: var(--whitesmoke);
+}
+
+footer {
+  margin-top: 30%;
+  position: absolute bottom;
 }
 
 button {
@@ -299,7 +333,7 @@ button {
 
 a {
 	border-radius: 5px;
-	color: var(--primary);
+	color: var(--dark);
 	font-weight: 600;
 	padding: 2px 4px;
 	margin-left: -2px;
@@ -308,9 +342,43 @@ a {
 }
 
 .navActive {
+<<<<<<< HEAD
   color: var(--secondary);
 }
 h3 {
   font-size: smaller;
   color: --eggplant;
 }
+=======
+  color: var(--tertiary);
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+>>>>>>> develop

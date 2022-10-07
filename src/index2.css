@@ -1,0 +1,190 @@
+/*set reusable theme colors*/
+:root {
+--whitesmoke: rgb(245, 245, 245);
+--eggplant: rgb(49, 3, 49);
+}
+
+*{
+    margin: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*color and font for page*/
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background: hsla(10, 82%, 65%, 1);
+
+    background: linear-gradient(90deg, hsla(10, 82%, 65%, 1) 0%, rgb(73, 10, 85) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(10, 82%, 65%, 1) 0%, rgb(74, 10, 85) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(10, 82%, 65%, 1) 0%, rgb(83, 11, 96) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EF745C", endColorstr="#34073D", GradientType=1 );
+    
+}
+/*start header section*/
+header {
+    margin: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center
+    }
+
+header h1 {
+    font-weight: bold;
+    color: var(--whitesmoke);
+    margin:25px 0;    
+}
+
+header a {
+    text-decoration: none;
+    color: var(--whitesmoke);
+}
+
+header p {
+    font-size: small;
+}
+/*smaller font*/
+header span {
+    font-size: small;
+    color: var(--eggplant);
+}
+/*rounded profile picture with shadow*/
+.avatar img {
+    height:400px;
+    width: 250px;
+    border-radius: 35%;
+    box-shadow: 0 0 10px rgba(245, 245, 245, 1);
+}
+/*set contact link to stay in place as the page scrolls*/
+.avatar a {
+    position: fixed;
+}
+
+
+/*set nav links to flex for smaller screens*/
+nav ul {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;  
+}
+/*replace hyperlink style with theme design*/
+nav a {
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    color:black;
+    text-shadow: 0 0 10px rgba(245, 245, 245, 1);
+    
+}
+
+nav a:hover {
+    color: var(--eggplant);
+}
+
+/*set design for each sections header*/
+h2 {
+    padding: 10px;
+    margin-left: 25px;
+}
+
+h2:hover {
+    text-shadow: 0 0 10px rgba(245, 245, 245, .5);
+}
+
+.about-me li {
+    margin-bottom: 10px;
+}
+
+.about-me ul {
+    text-indent: 10px;
+}
+/*flex projects so them re-align on small screens*/
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;  
+}
+
+.projects section {
+    border-radius:  15%;
+    width: 200px;
+    background-color: hsla(290, 79%, 13%, .2); 
+}
+/*main project bigger than other cards*/
+.projects .card1 {
+    width: 400px;    
+}
+/*border for all cards*/
+.projects img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15%;
+    margin: 0;          
+}
+
+.projects header {
+    color: var(--eggplant);
+    font-weight: bold;
+}
+/*aligns images with border*/
+.projects a {
+    margin: 0;
+}
+
+.projects a:hover {
+opacity: .5;
+}
+/*rounded edges*/
+.projects img {
+    border-radius: 15%;
+    width: 200px;
+}
+
+.projects .card1 img {
+    width: 400px;
+    height: 380px;
+}
+/*creates divider between sections*/
+.story {
+    border-top: 1px solid var(--eggplant);
+}
+
+.story p{
+    font-size: large;
+}
+/*flex to keep header and link together*/
+.contact .links {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-around;
+   background-color: rgba(189, 105, 183, .1);    
+}
+
+.contact a {
+    text-decoration: none;
+    color:var(--eggplant); 
+}
+
+.contact p {
+    color: var(--eggplant);
+}
+/*smaller footer tag*/
+h3 {
+    font-size: smaller;
+}
+
+/*Media query for smaller screens*/
+@media screen and (max-width: 980px) {
+        .avatar a {
+            position: relative;
+        }
+    }
+        
+

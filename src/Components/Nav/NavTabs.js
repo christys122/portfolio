@@ -4,8 +4,13 @@ import React from 'react';
 // We assign them to their own variable names
 function NavTabs({ currentPage, handlePageChange }) {
   return (
+<<<<<<< HEAD
     <ul className="flex-row">
       <li className="mx-2">
+=======
+    <ul className="flex-row space-between nav nav-tabs">
+      <li className="nav-item">
+>>>>>>> develop
         <a
           href="#home"
           onClick={() => handlePageChange('Home')}
